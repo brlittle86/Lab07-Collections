@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Reflection;
 using System.Text;
 
 namespace InventoryCollection
@@ -12,16 +13,11 @@ namespace InventoryCollection
 
         public void Add(Product item)
         {
-            Product[] temp = new Product[(count + 1)];
-            int tempCount = 0;
-            foreach (Product product in products)
+            if (count == products.Length)
             {
-                temp[tempCount] = product;
-                tempCount++;
+                Array.Resize(ref products, products.Length * 2);
             }
-            products = temp;
-            products[count] = item;
-            count++;
+            products[count++] = item;
         }
 
         public void Remove(Product item)
@@ -44,7 +40,8 @@ namespace InventoryCollection
         {
             foreach (Product item in products)
             {
-                Console.WriteLine(item);
+                PropertyInfo property = typeof(Product).GetProperty("Name");
+                Console.WriteLine(property.GetValue(item));
             }
         }
 

@@ -7,7 +7,7 @@ namespace InventoryCollection
     class Product
     {
         public string Name { get; set; }
-        public string ItemSize { get; set; }
+        public Size ItemSize { get; set; }
 
         public Product(string name)
         {

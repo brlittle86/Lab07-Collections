@@ -1,0 +1,11 @@
+C:\Users\akure\Source\Repos\Lab07-Collections\lab07-brandon\InventoryCollection\InventoryCollection\bin\Debug\netcoreapp2.0\InventoryCollection.deps.json
+C:\Users\akure\Source\Repos\Lab07-Collections\lab07-brandon\InventoryCollection\InventoryCollection\bin\Debug\netcoreapp2.0\InventoryCollection.runtimeconfig.json
+C:\Users\akure\Source\Repos\Lab07-Collections\lab07-brandon\InventoryCollection\InventoryCollection\bin\Debug\netcoreapp2.0\InventoryCollection.runtimeconfig.dev.json
+C:\Users\akure\Source\Repos\Lab07-Collections\lab07-brandon\InventoryCollection\InventoryCollection\bin\Debug\netcoreapp2.0\InventoryCollection.dll
+C:\Users\akure\Source\Repos\Lab07-Collections\lab07-brandon\InventoryCollection\InventoryCollection\bin\Debug\netcoreapp2.0\InventoryCollection.pdb
+C:\Users\akure\Source\Repos\Lab07-Collections\lab07-brandon\InventoryCollection\InventoryCollection\obj\Debug\netcoreapp2.0\InventoryCollection.csprojResolveAssemblyReference.cache
+C:\Users\akure\Source\Repos\Lab07-Collections\lab07-brandon\InventoryCollection\InventoryCollection\obj\Debug\netcoreapp2.0\InventoryCollection.csproj.CoreCompileInputs.cache
+C:\Users\akure\Source\Repos\Lab07-Collections\lab07-brandon\InventoryCollection\InventoryCollection\obj\Debug\netcoreapp2.0\InventoryCollection.AssemblyInfoInputs.cache
+C:\Users\akure\Source\Repos\Lab07-Collections\lab07-brandon\InventoryCollection\InventoryCollection\obj\Debug\netcoreapp2.0\InventoryCollection.AssemblyInfo.cs
+C:\Users\akure\Source\Repos\Lab07-Collections\lab07-brandon\InventoryCollection\InventoryCollection\obj\Debug\netcoreapp2.0\InventoryCollection.dll
+C:\Users\akure\Source\Repos\Lab07-Collections\lab07-brandon\InventoryCollection\InventoryCollection\obj\Debug\netcoreapp2.0\InventoryCollection.pdb
