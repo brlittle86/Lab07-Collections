@@ -6,12 +6,12 @@ using System.Text;
 
 namespace InventoryCollection
 {
-    class Inventory<Product> : IEnumerable<Product>
+    class Inventory<T> : IEnumerable<T>
     {
-        Product[] products = new Product[10];
+        T[] products = new T[10];
         int count = 0;
 
-        public void Add(Product item)
+        public void Add(T item)
         {
             if (count == products.Length)
             {
@@ -20,16 +20,19 @@ namespace InventoryCollection
             products[count++] = item;
         }
 
-        public void Remove(Product item)
+        public void Remove(T item)
         {
-            Product[] temporary = new Product[(count - 1)];
+            T[] temporary = new T[(count - 1)];
             int tempCount = 0;
-            foreach (Product product in products)
+            foreach (T product in products)
             {
-                if (!product.Equals(item))
+                if (product != null)
                 {
-                    temporary[tempCount] = product;
-                    tempCount++;
+                    if (!product.Equals(item))
+                    {
+                        temporary[tempCount] = product;
+                        tempCount++;
+                    } 
                 }
             }
             products = temporary;
@@ -38,14 +41,17 @@ namespace InventoryCollection
 
         public void View()
         {
-            foreach (Product item in products)
+            foreach (T item in products)
             {
-                PropertyInfo property = typeof(Product).GetProperty("Name");
-                Console.WriteLine(property.GetValue(item));
+                if (item != null)
+                {
+                    PropertyInfo property = typeof(Product).GetProperty("Name");
+                    Console.WriteLine(property.GetValue(item)); 
+                }
             }
         }
 
-        public IEnumerator<Product> GetEnumerator()
+        public IEnumerator<T> GetEnumerator()
         {
             for (int i = 0; i < count; i++)
             {
